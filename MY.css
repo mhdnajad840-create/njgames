@@ -1,0 +1,40 @@
+body{
+    margin:0;
+    background:#111;
+    font-family:Arial;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    color:white;
+}
+#box{width:340px;text-align:center;}
+#game{
+    width:300px;
+    height:500px;
+    background:#666;
+    margin:auto;
+    position:relative;
+    overflow:hidden;
+    display:none;
+}
+.road{
+    width:10px;height:80px;background:white;
+    position:absolute;left:145px;
+    animation:roadMove 1s linear infinite;
+}
+@keyframes roadMove{
+    from{top:-100px;}to{top:500px;}
+}
+#player{
+    width:40px;height:70px;background:red;
+    position:absolute;bottom:20px;left:130px;
+    border-radius:5px;
+}
+.enemy{
+    width:40px;height:70px;background:yellow;
+    position:absolute;top:-80px;border-radius:5px;
+}
+#hud{display:none;justify-content:space-between;margin:5px;}
+#controls{display:none;}
+button{padding:8px 12px;margin:4px;}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Pro Car Game</title>
+<link rel="stylesheet" href="MY.css">
+<script src="MY.js"></script>
+</head>
+<body>
+<div id="box">
+<!-- START SCREEN -->
+<div id="start">
+<h2>🚗 PRO CAR GAME</h2>
+<p>High Score: <span id="high">0</span></p>
+<button onclick="startGame()">▶ START</button>
+</div>
+
+<div id="hud">
+<span>Score: <span id="score">0</span></span>
+<span>Speed: <span id="speed">5</span></span>
+</div>
+
+<div id="game">
+<div class="road"></div>
+<div id="player"></div>
+</div>
+
+<div id="controls">
+<button onclick="moveLeft()">⬅</button>
+<button onclick="pauseGame()">⏸</button>
+<button onclick="moveRight()">➡</button>
+<button onclick="toggleSound()">🔊</button>
+</div>
+
+<button onclick="restartGame()" id="restart" style="display:none">🔄 Restart</button>
+
+</div>
+
+<!-- SOUNDS -->
+<audio id="music" loop>
+<source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3">
+</audio>
+<audio id="crash">
+<source src="https://www.soundjay.com/mechanical/crash-01.mp3">
+</audio>
+
+
+
+
+</body>
+</html>
